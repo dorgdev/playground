@@ -1,0 +1,59 @@
+<scene
+	background-col="0 0 0" 
+	background-tex="stars.jpg" 
+	ambient-light="0.07 0.07 0.07"
+	super-samp-width="3"
+	max-recursion-level="3">
+
+	<omni-light pos="3 0.1 -0.5" color="1 1 1"/>
+
+	<camera
+		eye="0 5 -3"
+		direction="0 -1 0"
+		screen-width="2"
+		screen-dist="1"
+		up-direction="0 0 -1"
+	/>
+
+	<!-- Saturn -->
+	<sphere 
+		center="0 -0.25 -3"
+		radius="1.1"
+		mtl-ambient="1 1 1"
+		mtl-emission="0 0 0"
+		mtl-texture="saturn.jpg"
+		mtl-specular="0 0 0"
+		reflectance="0"
+		texture-center="0.1 -0.10 0.5"
+	/>
+	
+	<!-- Saturn's rings -->
+	<circle center="0 -0.2 -3" inner-radius="1.49" radius="1.53" vec1="-1 0 0" vec2="0 -0.15 1.2"
+		mtl-ambient="1 1 1" mtl-diffuse="0.37 0.4 0.27"
+	/>
+	<circle center="0 -0.2 -3" inner-radius="1.53" radius="1.57" vec1="-1 0 0" vec2="0 -0.15 1.2"
+		mtl-ambient="1 1 1" mtl-diffuse="0.37 0.32 0.32"
+	/>
+	<circle center="0 -0.2 -3" inner-radius="1.57" radius="1.6" vec1="-1 0 0" vec2="0 -0.15 1.2"
+		mtl-ambient="1 1 1" mtl-diffuse="0.37 0.37 0.37"
+	/>
+	<circle center="0 -0.2 -3" inner-radius="1.6" radius="1.63" vec1="-1 0 0" vec2="0 -0.15 1.2"
+		mtl-ambient="1 1 1" mtl-diffuse="0.32 0.32 0.37"
+	/>
+	<circle center="0 -0.2 -3" inner-radius="1.63" radius="1.67" vec1="-1 0 0" vec2="0 -0.15 1.2"
+		mtl-ambient="1 1 1" mtl-diffuse="0.37 0.27 0.27"
+	/>
+	<circle center="0 -0.2 -3" inner-radius="1.67" radius="1.7" vec1="-1 0 0" vec2="0 -0.15 1.2"
+		mtl-ambient="1 1 1" mtl-diffuse="0.4 0.22 0.27"
+	/>
+	<circle center="0 -0.2 -3" inner-radius="1.7" radius="1.77" vec1="-1 0 0" vec2="0 -0.15 1.2"
+		mtl-ambient="1 1 1" mtl-diffuse="0.37 0.27 0.27"
+	/>
+	<circle center="0 -0.2 -3" inner-radius="1.77" radius="1.81" vec1="-1 0 0" vec2="0 -0.15 1.2"
+		mtl-ambient="1 1 1" mtl-diffuse="0.4 0.35 0.35"
+	/>
+	<circle center="0 -0.2 -3" inner-radius="1.81" radius="1.85" vec1="-1 0 0" vec2="0 -0.15 1.2"
+		mtl-ambient="1 1 1" mtl-diffuse="0.37 0.27 0.3"
+	/>
+
+</scene>

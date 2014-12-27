@@ -1,0 +1,2 @@
+String line = "GET /sdknvlsdnvln HTTP/1.1";
+System.out.println(line.matches("(.+) (.+) ([H|h][T|t][T|t][P|p])/1.\\d"));

@@ -1,0 +1,11 @@
+0:Test debug message which you should not see
+1:Test info message which you should not see
+2:Test warning message which you should see
+3:Test error message which you should see
+4:Test critical message which you should see
+5:This message should generate an error in your logger
+0:You should not see this message as well
+3:This is an error message which should get logged
+2:And this is a warning: beware! You should see the whole message up to here ->.
+1:This should not get logged if you follow the instructions
+4:But this is a CRITICAL message which should always get logged!

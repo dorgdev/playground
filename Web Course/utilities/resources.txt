@@ -1,0 +1,76 @@
+ HTML, CSS, and JavaScript from the Ground Up
+Course Resources
+
+
+Course Materials
+
+
+* Outline
+    - http://docs.google.com/a/google.com/Doc?id=cc555cgm_4dthhhbd8
+* Slides
+    - http://docs.google.com/a/google.com/Presentation?id=dgkgfz68_92f284f5hm
+* Code examples
+    - http://webdev-cours.prom.corp.google.com/
+* Email us with questions and feedback: ux-webdev@google.com
+
+
+HTML Resources
+
+
+* HTML W3C specifications: 
+  - HTML 4.01 (http://www.w3.org/TR/html401/)
+  - XHTML 1.0 (http://www.w3.org/TR/xhtml1/)
+* The W3C Markup Validation Service: a tool to help you make sure your HTML follows the rules of HTML.
+  - http://validator.w3.org/
+* Google's Internal W3C Markup Validation Service: use this version if you're validating Google internal/confidential content.
+  - http://isitvalid/w3c-markup-validator/
+* Google's Accessibility Group: General accessibilty guidelines and evaluations
+  - http://go/accessibility
+* WAI-ARIA Landmark Roles: Section markup for accessible page navigation
+  - http://www.paciellogroup.com/blog/?p=106
+
+
+
+CSS Resources
+
+
+* CSS W3C specifications:
+  - CSS1 (http://www.w3.org/TR/CSS1)
+  - CSS2 (http://www.w3.org/TR/CSS21/)
+  - CSS3 (http://www.w3.org/TR/css3-roadmap/)
+
+* The W3C CSS Validation Service: a tool to help you make sure your CSS follows the rules of CSS.
+  - http://jigsaw.w3.org/css-validator/
+
+* Google CSS Style Guide: a guide for how to write CSS at Google.
+  - http://wiki.corp.google.com/twiki/bin/view/Main/CSSStyleGuide
+
+* SelectORacle: a tool that provides natural language translations of CSS selectors.
+  - http://penguin.theopalgroup.com/cgi-bin/css3explainer/selectoracle.py
+
+* CSSTetris: a Google CSS grid framework. Tetris is aimed to give designers and engineers a base for developing new grid-like webpages without the use of tables.
+  - http://csstetris/
+
+
+JavaScript Resources
+
+
+* Closure: Google's JavaScript library.
+  - http://closure/
+
+* attaching events (or get generic versions)
+
+* hasClass/addClass/removeClass (or get generic versions)
+
+* getelementsby.com:  A handy reference for all the various getElementsBy* JavaScript functions that are out there, from the DOM standard getElementById to the very advanced getElementsBySelector functions.
+
+* Memory leaking / circular closures
+  - http://www.javascriptkit.com/javatutors/closuresleak/index3.shtml
+
+Other Resources
+
+
+* FireBug: Firebug integrates with Firefox to put a wealth of web development tools at your fingertips while you browse. You can edit, debug, and monitor CSS, HTML, and JavaScript live in any web page.
+  - http://getfirebug.com/
+
+* Web Developer Toolbar: The Web Developer extension adds a menu and a toolbar to the browser with various web developer tools. It is designed for Firefox, Flock, and Seamonkey and will run on any platform that these browsers support including Windows, Mac OS X and Linux.

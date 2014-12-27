@@ -1,0 +1,82 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+  <head>
+    <title>title</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    
+    <style type="text/css">
+      @import "../demos/expandos.css";
+    </style>
+  </head>
+  <body>
+    <div class="wd-expando">
+      <h2>Quicklinks 1</h2>
+      <ol>
+        <li>Link 1</li>
+        <li>Link 2</li>
+        <li>Link 3</li>
+        <li>Link 4</li>
+        <li>Link 5</li>
+      </ol>
+    </div>
+    <div class="wd-expando">
+      <h2>Quicklinks 2</h2>
+      <ol>
+        <li>Link 1</li>
+        <li>Link 2</li>
+        <li>Link 3</li>
+        <li>Link 4</li>
+        <li>Link 5</li>
+      </ol>
+    </div>
+    <div class="wd-expando">
+      <h2>Quicklinks 3</h2>
+      <ol>
+        <li>Link 1</li>
+        <li>Link 2</li>
+        <li>Link 3</li>
+        <li>Link 4</li>
+        <li>Link 5</li>
+      </ol>
+    </div>
+    
+    <script src="../utilities/utility.js"></script>
+    <script type="text/javascript">
+    /**
+     * utility.js methods you might need:
+     * If you get stuck, check out expandos-simple.js
+        addEventSimple(element, eventType, function)
+        hasClass(element, className)
+        addClass(element, className)
+        removeClass(element, className)
+        getElementsByClass(className) 
+     
+     CSS classes you might need(from ../demos/expandos.css):
+        wd-expando-on
+        wd-expando-off
+     */
+
+    // get all the expando containers by a class name
+    var expandos = getElementsByClass('wd-expando');
+
+    for (var i = 0; i < expandos.length; i++) {
+      var expando = expandos[i];
+      addClass(expando, 'wd-expando-on');
+      var header = expando.getElementsByTagName('h2')[0];
+      addEventSimple(header, 'click', toggleExpando);
+    }
+    
+    function toggleExpando () {
+      var expando = this.parentNode;
+      if (hasClass(expando, 'wd-expando-on')) {
+        removeClass(expando, 'wd-expando-on');
+        addClass(expando, 'wd-expando-off');
+      } else {
+        removeClass(expando, 'wd-expando-off');
+        addClass(expando, 'wd-expando-on');
+      }
+    }
+    </script>
+  </body>
+</html>
+

@@ -1,0 +1,527 @@
+<scene
+	background-col="0.2 0.2 0.2" 
+	ambient-light="1 1 1"
+	super-samp-width="4"
+	max-recursion-level="20">
+
+	<spot-light pos="0 0 -10" color="0.5 0 0.5" dir="0 0 -1" kc="0.001" kl="0.001" kq="0.1"/>
+	<spot-light pos="0 0 -10" color="0.5 0 0.5" dir="0 0 1" kc="0.1" kl="0.001" kq="0.1"/>
+	<omni-light pos="0.5 0 -1.5" color="0.5 0.5 0" kc="0.01"/>
+	<omni-light pos="-0.5 0 -1.5" color="0 0.5 0" kc="0.01"/>
+	<omni-light pos="0 0.5 -1.5" color="0.5 0 0" kc="0.01"/>
+	<omni-light pos="0 -0.5 -1.5" color="0 0 0.5" kc="0.01"/>
+
+
+	<camera
+		eye="0 0 0"
+		direction="0 0 -1"
+		screen-width="1.5"
+		screen-dist="1"
+		up-direction="0 1 0"/>
+
+	<!-- 1st line of spheres -->
+
+	<sphere 
+		center="-0.12 0.12 -1"
+		radius="0.1"
+		mtl-specular = "0.1 0.1 0.1"
+		mtl-diffuse="0 0 0"
+		mtl-ambient="0.05 0.05 0.05"
+		mtl-shininess = "2"
+		reflectance="0.5"
+	/>
+
+	<sphere 
+		center="0.12 0.12 -1"	
+		radius="0.1"
+		mtl-specular = "0.1 0.1 0.1"
+		mtl-diffuse="0 0 0"
+		mtl-ambient="0.05 0.05 0.05"
+		mtl-shininess = "2"
+		reflectance="0.5"
+	/>
+
+	<sphere 
+		center="-0.12 -0.12 -1"	
+		radius="0.1"
+		mtl-specular = "0.1 0.1 0.1"
+		mtl-diffuse="0 0 0"
+		mtl-ambient="0.05 0.05 0.05"
+		mtl-shininess = "2"
+		reflectance="0.5"
+	/>
+
+	<sphere 
+		center="0.12 -0.12 -1"	
+		radius="0.1"
+		mtl-specular = "0.1 0.1 0.1"
+		mtl-diffuse="0 0 0"
+		mtl-ambient="0.05 0.05 0.05"
+		mtl-shininess = "2"
+		reflectance="0.5"
+	/>
+
+	<sphere 
+		center="-0.36 0.12 -1"
+		radius="0.1"
+		mtl-specular = "0.1 0.1 0.1"
+		mtl-diffuse="0 0 0"
+		mtl-ambient="0.05 0.05 0.05"
+		mtl-shininess = "2"
+		reflectance="0.5"
+	/>
+
+	<sphere 
+		center="-0.36 -0.12 -1"
+		radius="0.1"
+		mtl-specular = "0.1 0.1 0.1"
+		mtl-diffuse="0 0 0"
+		mtl-ambient="0.05 0.05 0.05"
+		mtl-shininess = "2"
+		reflectance="0.5"
+	/>
+
+	<sphere 
+		center="0.36 0.12 -1"
+		radius="0.1"
+		mtl-specular = "0.1 0.1 0.1"
+		mtl-diffuse="0 0 0"
+		mtl-ambient="0.05 0.05 0.05"
+		mtl-shininess = "2"
+		reflectance="0.5"
+	/>
+
+	<sphere 
+		center="0.36 -0.12 -1"
+		radius="0.1"
+		mtl-specular = "0.1 0.1 0.1"
+		mtl-diffuse="0 0 0"
+		mtl-ambient="0.05 0.05 0.05"
+		mtl-shininess = "2"
+		reflectance="0.5"
+	/>
+
+	<sphere 
+		center="-0.36 0.36 -1"
+		radius="0.1"
+		mtl-specular = "0.1 0.1 0.1"
+		mtl-diffuse="0 0 0"
+		mtl-ambient="0.05 0.05 0.05"
+		mtl-shininess = "2"
+		reflectance="0.5"
+	/>
+
+	<sphere 
+		center="-0.36 -0.36 -1"
+		radius="0.1"
+		mtl-specular = "0.1 0.1 0.1"
+		mtl-diffuse="0 0 0"
+		mtl-ambient="0.05 0.05 0.05"
+		mtl-shininess = "2"
+		reflectance="0.5"
+	/>
+
+	<sphere 
+		center="-0.12 0.36 -1"
+		radius="0.1"
+		mtl-specular = "0.1 0.1 0.1"
+		mtl-diffuse="0 0 0"
+		mtl-ambient="0.05 0.05 0.05"
+		mtl-shininess = "2"
+		reflectance="0.5"
+	/>
+
+	<sphere 
+		center="-0.12 -0.36 -1"
+		radius="0.1"
+		mtl-specular = "0.1 0.1 0.1"
+		mtl-diffuse="0 0 0"
+		mtl-ambient="0.05 0.05 0.05"
+		mtl-shininess = "2"
+		reflectance="0.5"
+	/>
+
+	<sphere 
+		center="0.12 0.36 -1"
+		radius="0.1"
+		mtl-specular = "0.1 0.1 0.1"
+		mtl-diffuse="0 0 0"
+		mtl-ambient="0.05 0.05 0.05"
+		mtl-shininess = "2"
+		reflectance="0.5"
+	/>
+
+	<sphere 
+		center="0.12 -0.36 -1"
+		radius="0.1"
+		mtl-specular = "0.1 0.1 0.1"
+		mtl-diffuse="0 0 0"
+		mtl-ambient="0.05 0.05 0.05"
+		mtl-shininess = "2"
+		reflectance="0.5"
+	/>
+
+	<sphere 
+		center="0.36 0.36 -1"
+		radius="0.1"
+		mtl-specular = "0.1 0.1 0.1"
+		mtl-diffuse="0 0 0"
+		mtl-ambient="0.05 0.05 0.05"
+		mtl-shininess = "2"
+		reflectance="0.5"
+	/>
+
+	<sphere 
+		center="0.36 -0.36 -1"
+		radius="0.1"
+		mtl-specular = "0.1 0.1 0.1"
+		mtl-diffuse="0 0 0"
+		mtl-ambient="0.05 0.05 0.05"
+		mtl-shininess = "2"
+		reflectance="0.5"
+	/>
+
+	<!-- 2nd line of spheres -->
+
+	<sphere 
+		center="-0.12 0.12 -1.5"
+		radius="0.1"
+		mtl-specular = "0.1 0.1 0.1"
+		mtl-diffuse="0 0 0"
+		mtl-ambient="0.05 0.05 0.05"
+		mtl-shininess = "2"
+		reflectance="0.5"
+	/>
+
+	<sphere 
+		center="0.12 0.12 -1.5"	
+		radius="0.1"
+		mtl-specular = "0.1 0.1 0.1"
+		mtl-diffuse="0 0 0"
+		mtl-ambient="0.05 0.05 0.05"
+		mtl-shininess = "2"
+		reflectance="0.5"
+	/>
+
+	<sphere 
+		center="-0.12 -0.12 -1.5"	
+		radius="0.1"
+		mtl-specular = "0.1 0.1 0.1"
+		mtl-diffuse="0 0 0"
+		mtl-ambient="0.05 0.05 0.05"
+		mtl-shininess = "2"
+		reflectance="0.5"
+	/>
+
+	<sphere 
+		center="0.12 -0.12 -1.5"	
+		radius="0.1"
+		mtl-specular = "0.1 0.1 0.1"
+		mtl-diffuse="0 0 0"
+		mtl-ambient="0.05 0.05 0.05"
+		mtl-shininess = "2"
+		reflectance="0.5"
+	/>
+
+	<sphere 
+		center="-0.36 0.12 -1.5"
+		radius="0.1"
+		mtl-specular = "0.1 0.1 0.1"
+		mtl-diffuse="0 0 0"
+		mtl-ambient="0.05 0.05 0.05"
+		mtl-shininess = "2"
+		reflectance="0.5"
+	/>
+
+	<sphere 
+		center="-0.36 -0.12 -1.5"
+		radius="0.1"
+		mtl-specular = "0.1 0.1 0.1"
+		mtl-diffuse="0 0 0"
+		mtl-ambient="0.05 0.05 0.05"
+		mtl-shininess = "2"
+		reflectance="0.5"
+	/>
+
+	<sphere 
+		center="0.36 0.12 -1.5"
+		radius="0.1"
+		mtl-specular = "0.1 0.1 0.1"
+		mtl-diffuse="0 0 0"
+		mtl-ambient="0.05 0.05 0.05"
+		mtl-shininess = "2"
+		reflectance="0.5"
+	/>
+
+	<sphere 
+		center="0.36 -0.12 -1.5"
+		radius="0.1"
+		mtl-specular = "0.1 0.1 0.1"
+		mtl-diffuse="0 0 0"
+		mtl-ambient="0.05 0.05 0.05"
+		mtl-shininess = "2"
+		reflectance="0.5"
+	/>
+
+	<sphere 
+		center="-0.36 0.36 -1.5"
+		radius="0.1"
+		mtl-specular = "0.1 0.1 0.1"
+		mtl-diffuse="0 0 0"
+		mtl-ambient="0.05 0.05 0.05"
+		mtl-shininess = "2"
+		reflectance="0.5"
+	/>
+
+	<sphere 
+		center="-0.36 -0.36 -1.5"
+		radius="0.1"
+		mtl-specular = "0.1 0.1 0.1"
+		mtl-diffuse="0 0 0"
+		mtl-ambient="0.05 0.05 0.05"
+		mtl-shininess = "2"
+		reflectance="0.5"
+	/>
+
+	<sphere 
+		center="-0.12 0.36 -1.5"
+		radius="0.1"
+		mtl-specular = "0.1 0.1 0.1"
+		mtl-diffuse="0 0 0"
+		mtl-ambient="0.05 0.05 0.05"
+		mtl-shininess = "2"
+		reflectance="0.5"
+	/>
+
+	<sphere 
+		center="-0.12 -0.36 -1.5"
+		radius="0.1"
+		mtl-specular = "0.1 0.1 0.1"
+		mtl-diffuse="0 0 0"
+		mtl-ambient="0.05 0.05 0.05"
+		mtl-shininess = "2"
+		reflectance="0.5"
+	/>
+
+	<sphere 
+		center="0.12 0.36 -1.5"
+		radius="0.1"
+		mtl-specular = "0.1 0.1 0.1"
+		mtl-diffuse="0 0 0"
+		mtl-ambient="0.05 0.05 0.05"
+		mtl-shininess = "2"
+		reflectance="0.5"
+	/>
+
+	<sphere 
+		center="0.12 -0.36 -1.5"
+		radius="0.1"
+		mtl-specular = "0.1 0.1 0.1"
+		mtl-diffuse="0 0 0"
+		mtl-ambient="0.05 0.05 0.05"
+		mtl-shininess = "2"
+		reflectance="0.5"
+	/>
+
+	<sphere 
+		center="0.36 0.36 -1.5"
+		radius="0.1"
+		mtl-specular = "0.1 0.1 0.1"
+		mtl-diffuse="0 0 0"
+		mtl-ambient="0.05 0.05 0.05"
+		mtl-shininess = "2"
+		reflectance="0.5"
+	/>
+
+	<sphere 
+		center="0.36 -0.36 -1.5"
+		radius="0.1"
+		mtl-specular = "0.1 0.1 0.1"
+		mtl-diffuse="0 0 0"
+		mtl-ambient="0.05 0.05 0.05"
+		mtl-shininess = "2"
+		reflectance="0.5"
+	/>
+
+
+	<!-- 3rd line of spheres -->
+
+	<sphere 
+		center="-0.12 0.12 -2"
+		radius="0.1"
+		mtl-specular = "0.1 0.1 0.1"
+		mtl-diffuse="0 0 0"
+		mtl-ambient="0.05 0.05 0.05"
+		mtl-shininess = "2"
+		reflectance="0.5"
+	/>
+
+	<sphere 
+		center="0.12 0.12 -2"	
+		radius="0.1"
+		mtl-specular = "0.1 0.1 0.1"
+		mtl-diffuse="0 0 0"
+		mtl-ambient="0.05 0.05 0.05"
+		mtl-shininess = "2"
+		reflectance="0.5"
+	/>
+
+	<sphere 
+		center="-0.12 -0.12 -2"	
+		radius="0.1"
+		mtl-specular = "0.1 0.1 0.1"
+		mtl-diffuse="0 0 0"
+		mtl-ambient="0.05 0.05 0.05"
+		mtl-shininess = "2"
+		reflectance="0.5"
+	/>
+
+	<sphere 
+		center="0.12 -0.12 -2"	
+		radius="0.1"
+		mtl-specular = "0.1 0.1 0.1"
+		mtl-diffuse="0 0 0"
+		mtl-ambient="0.05 0.05 0.05"
+		mtl-shininess = "2"
+		reflectance="0.5"
+	/>
+
+	<sphere 
+		center="-0.36 0.12 -2"
+		radius="0.1"
+		mtl-specular = "0.1 0.1 0.1"
+		mtl-diffuse="0 0 0"
+		mtl-ambient="0.05 0.05 0.05"
+		mtl-shininess = "2"
+		reflectance="0.5"
+	/>
+
+	<sphere 
+		center="-0.36 -0.12 -2"
+		radius="0.1"
+		mtl-specular = "0.1 0.1 0.1"
+		mtl-diffuse="0 0 0"
+		mtl-ambient="0.05 0.05 0.05"
+		mtl-shininess = "2"
+		reflectance="0.5"
+	/>
+
+	<sphere 
+		center="0.36 0.12 -2"
+		radius="0.1"
+		mtl-specular = "0.1 0.1 0.1"
+		mtl-diffuse="0 0 0"
+		mtl-ambient="0.05 0.05 0.05"
+		mtl-shininess = "2"
+		reflectance="0.5"
+	/>
+
+	<sphere 
+		center="0.36 -0.12 -2"
+		radius="0.1"
+		mtl-specular = "0.1 0.1 0.1"
+		mtl-diffuse="0 0 0"
+		mtl-ambient="0.05 0.05 0.05"
+		mtl-shininess = "2"
+		reflectance="0.5"
+	/>
+
+	<sphere 
+		center="-0.36 0.36 -2"
+		radius="0.1"
+		mtl-specular = "0.1 0.1 0.1"
+		mtl-diffuse="0 0 0"
+		mtl-ambient="0.05 0.05 0.05"
+		mtl-shininess = "2"
+		reflectance="0.5"
+	/>
+
+	<sphere 
+		center="-0.36 -0.36 -2"
+		radius="0.1"
+		mtl-specular = "0.1 0.1 0.1"
+		mtl-diffuse="0 0 0"
+		mtl-ambient="0.05 0.05 0.05"
+		mtl-shininess = "2"
+		reflectance="0.5"
+	/>
+
+	<sphere 
+		center="-0.12 0.36 -2"
+		radius="0.1"
+		mtl-specular = "0.1 0.1 0.1"
+		mtl-diffuse="0 0 0"
+		mtl-ambient="0.05 0.05 0.05"
+		mtl-shininess = "2"
+		reflectance="0.5"
+	/>
+
+	<sphere 
+		center="-0.12 -0.36 -2"
+		radius="0.1"
+		mtl-specular = "0.1 0.1 0.1"
+		mtl-diffuse="0 0 0"
+		mtl-ambient="0.05 0.05 0.05"
+		mtl-shininess = "2"
+		reflectance="0.5"
+	/>
+
+	<sphere 
+		center="0.12 0.36 -2"
+		radius="0.1"
+		mtl-specular = "0.1 0.1 0.1"
+		mtl-diffuse="0 0 0"
+		mtl-ambient="0.05 0.05 0.05"
+		mtl-shininess = "2"
+		reflectance="0.5"
+	/>
+
+	<sphere 
+		center="0.12 -0.36 -2"
+		radius="0.1"
+		mtl-specular = "0.1 0.1 0.1"
+		mtl-diffuse="0 0 0"
+		mtl-ambient="0.05 0.05 0.05"
+		mtl-shininess = "2"
+		reflectance="0.5"
+	/>
+
+	<sphere 
+		center="0.36 0.36 -2"
+		radius="0.1"
+		mtl-specular = "0.1 0.1 0.1"
+		mtl-diffuse="0 0 0"
+		mtl-ambient="0.05 0.05 0.05"
+		mtl-shininess = "2"
+		reflectance="0.5"
+	/>
+
+	<sphere 
+		center="0.36 -0.36 -2"
+		radius="0.1"
+		mtl-specular = "0.1 0.1 0.1"
+		mtl-diffuse="0 0 0"
+		mtl-ambient="0.05 0.05 0.05"
+		mtl-shininess = "2"
+		reflectance="0.5"
+	/>
+
+	<!-- The closing triangles -->
+	
+	<trimesh
+		tri1="-5  5  5   -7  0  5    0 0 -1000"
+		tri2="-7  0  5   -5 -5  5    0 0 -1000"
+		tri3="-5 -5  5    0 -7  5    0 0 -1000"
+		tri4=" 0 -7  5    5 -5  5    0 0 -1000"
+		tri5=" 5 -5  5    7  0  5    0 0 -1000"
+		tri6=" 7  0  5    5  5  5    0 0 -1000"
+		tri7=" 5  5  5    0  7  5    0 0 -1000"
+		tri8=" 0  7  5   -5  5  5    0 0 -1000"
+		mtl-diffuse="0.01 0.01 0.01"
+		mtl-ambient="0 0 0"
+		mtl-emission="0 0 0"
+		mtl-specular="0 0 0"
+		mtl-shininess="0"
+		reflectance="0"
+	/>
+</scene>

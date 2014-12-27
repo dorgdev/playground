@@ -1,0 +1,17 @@
+
+These are the files for the class: HTML, CSS, and Javascript
+from the Ground Up.
+
+demos/demo.html is a fully-integrated page.
+
+Each component on that page has the following:
+ *-markup.html (just the barebones html)
+ *-template.html (if this is an in-class exercise, use this)
+ *.css (the css for this component)
+ *.js (possibly, some javascript for this component)
+
+Also, we've put a few templates and handy reference files in
+the utilities directory for you as well. Enjoy!
+
+Questions? Please feel free to email ux-webdev@google.com.
+

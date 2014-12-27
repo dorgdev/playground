@@ -1,0 +1,47 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script src="js/libs/jquery-1.9.0/jquery.min.js"></script>
+        <style>
+            table {
+                width: 100%;
+            }
+            tr {
+                height: 20px;
+            }
+            tr:nth-child(even) {
+                background-color: gray;
+            }
+            tr:nth-child(odd) {
+                background-color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <div>TODO write content</div>
+        <button id="myb">add a new row</button>
+        <table border="1" id="myt">
+            <tr><th>ID</th><th>Name</th></tr>
+        </table>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $('#myb').click(function() {
+                    $('<tr><td></td><td></td></tr>').insertAfter($('tr').last());
+                });
+            });
+            var index = 0;
+            $(window).scroll(function() {
+                if ($(window).scrollTop() >= $(document).height() - $(window).height() -10) {
+                    $('<tr><td>' + index + '</td><td></td></tr>').insertAfter($('tr').last());
+                    index++;
+                }
+            });
+        </script>
+    </body>
+</html>

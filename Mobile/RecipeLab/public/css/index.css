@@ -1,0 +1,104 @@
+root { 
+    display: block;
+}
+body {
+    background-color: #ccddff;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+header {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: red;
+    font-size: 48px;
+    font-family: fantasy ,cursive, serif;
+    width: 100%;
+}
+section {
+    text-align: center;
+    width: 100%;
+}
+ul {
+    list-style: none;
+}
+ul#input_fields {
+    background-image: linear-gradient(bottom, rgb(135,174,250) 42%, rgb(170,196,250) 85%);
+    background-image: -o-linear-gradient(bottom, rgb(135,174,250) 42%, rgb(170,196,250) 85%);
+    background-image: -moz-linear-gradient(bottom, rgb(135,174,250) 42%, rgb(170,196,250) 85%);
+    background-image: -webkit-linear-gradient(bottom, rgb(135,174,250) 42%, rgb(170,196,250) 85%);
+    background-image: -ms-linear-gradient(bottom, rgb(135,174,250) 42%, rgb(170,196,250) 85%);
+    border-radius: 10px;
+    border: solid 1px transparent;
+    padding: 20px;
+    color: #121376;
+    text-align: left;
+    margin: 5px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+ul li label {
+    font-size: 16px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+ul li input {
+    width: 100%;
+    font-size: 16px;
+    border-color: #99bbee;
+}
+li#terms_item {
+    width: 100%;
+    text-align: left;
+    font-size: 12px;
+padding-top: 5px;
+    padding-bottom: 5px;
+}
+li#terms_item input {
+    width: 5%;
+    display: inline-block;
+}
+li#terms_item label {
+    width: 90%;
+    display: inline-block;
+}
+section button  {
+    width: 30%;
+    margin-right: 10px;
+    margin-bottom: 50px;
+    float: right;
+    padding: 6px 10px;
+    color: #ffffff;
+    font-size: 14px;
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#7689ff), to(#99bbff));
+    background-color: #7689ff;
+    text-shadow: #050505 0 -1px 0;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    border: solid 1px transparent;
+    font-weight: bold;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+section button:hover {
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#a3d943), to(#a3d943), color-stop(75%, #75b230));
+    background-color: #75b230;
+}
+footer {
+    padding-left: 5px;
+    padding-bottom: 5px;
+    color: #121376;
+    font-size: 12px;
+    bottom: 0;
+    width: 100%;
+    height: 25px;
+    position: fixed;
+    background-color: rgb(135,174,250);
+    border-top: black solid 1px;
+}
+footer a {
+    color: #121376;
+}

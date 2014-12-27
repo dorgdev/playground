@@ -1,0 +1,239 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+  <head>
+    <title>HTML (Layout) Tags and their meaning</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <style type="text/css">
+    table {
+      border-collapse: collapse;
+    }
+    th,
+    td {
+      text-align: left;
+      padding: 5px;
+      border: 1px solid #333;
+    }
+    #wd-notes {
+      width: 40%;
+    }
+    </style>
+  </head>
+  <body>
+  
+    <h1>HTML (Layout) Tags and their meanings</h1>
+    <p>
+      More info (attributes, rules, etc): <a href="http://www.w3schools.com/tags/default.asp">http://www.w3schools.com/tags/default.asp</a>
+    </p>
+    
+    <table>
+      <thead>
+        <tr>
+          <th id="wd-tag">Tagname</th>
+          <th id="wd-means">Stands for</th>
+          <th id="wd-display">Default Display</th>
+          <th id="wd-notes">Notes</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            &lt;div&gt;
+          </td>
+          <td>
+            division
+          </td>
+          <td>
+            block
+          </td>
+          <td>
+            Generic way to group contents. Can pretty much contain anything.
+          </td>
+        </tr>
+        <tr>
+          <td>
+            &lt;span&gt;
+          </td>
+          <td>
+            er, span
+          </td>
+          <td>
+            inline
+          </td>
+          <td>
+            Generic way to group inline contents.
+          </td>
+        </tr>
+        <tr>
+          <td>
+            &lt;h1&gt; to &lt;h6&gt;
+          </td>
+          <td>
+            headline 1-6
+          </td>
+          <td>
+            block
+          </td>
+          <td>
+            Headlines - with varying degrees of heirarchical importance (1=topmost, 6-bottomest).
+          </td>
+        </tr>
+        <tr>
+          <td>
+            &lt;a&gt;
+          </td>
+          <td>
+            anchor
+          </td>
+          <td>
+            inline (text-decoration: underline)
+          </td>
+          <td>
+            Anchors are what makes the www go 'round. With their very significant "href" and "name" attributes, the anchor is handy. Has some nifty CSS pseudo selectors (:visited, :link, :hover)
+          </td>
+        </tr>
+        <tr>
+          <td>
+            &lt;table&gt;
+          </td>
+          <td>
+            um, table
+          </td>
+          <td>
+            block
+          </td>
+          <td>
+            Tables are for the display of data sets, with a header row with labels for the columns followed by rows of data. Ideally, tables should not be used for page layout.
+          </td>
+        </tr>
+        <tr>
+          <td>
+            &lt;ul&gt;
+          </td>
+          <td>
+            unordered list
+          </td>
+          <td>
+            block
+          </td>
+          <td>
+            A list of items whereby their order does not have meaning for the contents. Exmaples: FAQ, bullet points, etc...
+          </td>
+        </tr>
+        <tr>
+          <td>
+            &lt;ol&gt;
+          </td>
+          <td>
+            ordered list
+          </td>
+          <td>
+            block
+          </td>
+          <td>
+            A list of items whereby their order is meaningful. Examples: top ten list, 2008 OKRs, search results, etc...
+          </td>
+        </tr>
+        <tr>
+          <td>
+            &lt;li&gt;
+          </td>
+          <td>
+            list item
+          </td>
+          <td>
+            block
+          </td>
+          <td>
+            Designates list items inside of ul and ol.
+          </td>
+        </tr>
+        <tr>
+          <td>
+            &lt;dl&gt;
+          </td>
+          <td>
+            definition list
+          </td>
+          <td>
+            block
+          </td>
+          <td>
+            Contains terms and their definitions, generally.
+          </td>
+        </tr>
+        <tr>
+          <td>
+            &lt;em&gt;
+          </td>
+          <td>
+            loud
+          </td>
+          <td>
+            inline (font-style: italic)
+          </td>
+          <td>
+            In the context of the things around it, the contents of the em tag are somewhat more important. "Once more, with feeling."
+          </td>
+        </tr>
+        <tr>
+          <td>
+            &lt;strong&gt;
+          </td>
+          <td>
+            louder
+          </td>
+          <td>
+            inline (font-weight: bold)
+          </td>
+          <td>
+            In the context of the things around it, the contents of the em tag are very important.
+          </td>
+        </tr>
+        <tr>
+          <td>
+            &lt;form&gt;
+          </td>
+          <td>
+            form
+          </td>
+          <td>
+            block
+          </td>
+          <td>
+            Please.
+          </td>
+        </tr>
+        <tr>
+          <td>
+            &lt;fieldset&gt;
+          </td>
+          <td>
+            set of fields
+          </td>
+          <td>
+            block
+          </td>
+          <td>
+            A fieldset is used to group logically relevant fields together in a form. Maybe you have a long form with three sections? Or a bunch of checkboxes that all should go together? Then the fieldset is for you!
+          </td>
+        </tr>
+        <tr>
+          <td>
+            &lt;label&gt;
+          </td>
+          <td>
+            field label
+          </td>
+          <td>
+            inline
+          </td>
+          <td>
+            Used in a form, denotes the text label for the input. Has the important "for" attribute. Helps with accessibility and usability in forms.
+          </td>
+        </tr>
+        
+      </tbody>
+    </table>
+  </body>
+</html>
+

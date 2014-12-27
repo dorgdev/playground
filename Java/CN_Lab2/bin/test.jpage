@@ -1,0 +1,19 @@
+java.util.regex.Pattern link = java.util.regex.Pattern.compile("<(?:a|img)(?:[^>]*)(?:src|href)=\"([^\"]*)\"");
+
+String html = "<html><head></head><body><a href=\"link1\"><som text><br>\n" +
+		"<table><tr><td><img src=\"link2\"><h1>img</h1></img>\n" +
+    "</td></tr><tr><td><a fgcolor=\"green\" href=\"link3\">some href</a>\n" +
+		"</td></tr><tr><td><a bgcolor=\"red\"\n" +
+    "attr=\"value\" href=\"link4\"/><img \n" +
+		"size=\"8\" src=\"link5\"/></tr></tb></table></body></html>";
+
+java.util.regex.Matcher matcher = link.matcher(html);
+while (matcher.find()) {
+  System.out.println("Link: " + matcher.group(1));
+}
+
+String link = String.format("/%s_%4d%2d%2d_%2d%2d%2d.html", "www.google.co.il", 2013, 1, 11, 9, 30, 8);
+System.out.println("Added new link: " + link);
+
+
+System.out.println("Added new link: " + formatter.format(new java.util.Date(System.currentTimeMillis())));

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>RecipeLab - Edit</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="MobileOptimized" content="width"/>
+    <meta name="HandheldFriendly" content="true"/>
+    <script src="js/db-mock.js"></script>
+    <script src="js/recipelab.js"></script>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/recipelab.css"/>
+  </head>
+  <body>
+    <script type="text/javascript">
+      window.location = "home.html";
+    </script>
+    <div data-role="page">
+      <div data-role="header" data-theme="b" id="recipelab-header">
+        <label>RecipeLab</label>
+      </div>
+      <div data-role="content" id="view-content">
+        <div data-role="fieldcontain">
+          <label for="edit-name">Name:</label>
+          <input type="text" id="edit-name" name="edit-name"/>
+        </div>
+        <div id="edit-img-div">
+          <a data-role="button" id="edit-recipe-image">Change Image</a>
+          <div id="edit-image-capture-div">
+            <input type="hidden" id="edit-image-url"/>
+	        <input type="file" id="edit-image-capture" name="files[]" accept="image/*">
+	      </div>
+        </div>
+        <div data-role="fieldcontain">
+          <label for="edit-date">Create Date:</label>
+          <input type="text" name="edit-date" id="edit-date"/>
+        </div>
+        <div data-role="fieldcontain">
+          <label for="edit-creator">Creator:</label>
+          <input type="text" name="edit-creator" id="edit-creator"/>
+        </div>
+        <fieldset data-role="controlgroup" id="edit-types-fieldset">
+          <legend>Cuisine Types:</legend>
+        </fieldset>
+        <div id="edit-ingredients-list">
+          <table>
+            <tr>
+              <td class="col-a">&nbsp;</td>
+              <td class="col-b">Amount</td>
+              <td class="col-c">Type</td>
+              <td class="col-d">Ingredient</td>
+            </tr>
+            <tr id="add_ingredient_button">
+              <td colspan="4">
+                <button data-icon="plus" data-iconpos="notext" title="Add"
+                        data-role="button" onclick="add_ingredient([0,'','']);"></button>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div data-role="fieldcontain">
+          <label for="edit-instructions">Instructions:</label>
+          <textarea name="edit-instructions" id="edit-instructions"></textarea>
+        </div>
+        <div id="edit-buttons-div">
+          <a id="edit-save-button" onclick="save_recipe();" data-role="button">Save</a>
+          <a id="edit-delete-button" onclick="delete_recipe();" data-role="button">Delete</a>
+          <a id="edit-cancel-button" href="view.html" data-role="button">Cancel</a>
+        </div>
+      </div>
+      <div data-role="footer" data-position="fixed" data-theme="b"
+           id="recipelab-footer" data-tap-toggle="false">
+        <div data-role="controlgroup" data-type="horizontal">
+          <a href="settings.html" title="Settings" data-role="button" 
+             data-icon="gear" class="recipelab-footer-button">Settings</a>
+          <a href="fav.html" title="My Recipes" data-role="button"
+             data-icon="star" class="recipelab-footer-button">Starred</a>
+          <a href="search.html" title="Search" data-role="button"
+             data-icon="search" class="recipelab-footer-button">Search</a>
+          <a href="home.html" title="Home" data-role="button"
+             data-icon="home" class="recipelab-footer-button">Home</a>
+        </div>
+      </div>
+      <script type="text/javascript">
+        $(function() {
+          create_types_checkboxes('edit-types-fieldset', false, fill_edit_options);
+        });
+      </script>
+    </div>
+  </body>
+</html>

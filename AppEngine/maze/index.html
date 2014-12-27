@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+{% autoescape true %}
+<html>
+  <head>
+    <link type="text/css" rel="stylesheet" href="/css/maze.css" />
+    <script src="/js/maze.js"></script>
+  </head>
+  <body onload="draw_maze(5)">
+	<H3>The A-Maze-ing game</H3>
+    <div>
+      <label for="score">Score:</label>
+      <input type="text" name="score" id="score" readonly="readonly"/>
+    </div>
+	<hr>
+	<div>
+		<table style="border:1px;">
+			<tr>
+				<td id="cell_0_0" class="blank left right down"><img src="img/current.png"></td>
+				<td id="cell_0_1" class="blank left"><img src="img/visited.png"></td>
+				<td id="cell_0_2" class="blank"><img src="img/visited.png"></td>
+			</tr>
+			<tr>
+				<td id="cell_1_0" class="blank up"><img src="img/visited.png"></td>
+				<td id="cell_1_1" class="blank"><img src="img/visited.png"></td>
+				<td id="cell_1_2" class="blank"><img src="img/visited.png"></td>
+			</tr>
+			<tr>
+				<td id="cell_2_0" class="blank"><img src="img/visited.png"></td>
+				<td id="cell_2_1" class="blank"><img src="img/visited.png"></td>
+				<td id="cell_2_2" class="blank"><img src="img/end.png"></td>
+			</tr>
+		</table>
+	</div>
+  </body>
+</html>
+{% endautoescape %}

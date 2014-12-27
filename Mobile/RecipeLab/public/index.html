@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>RecipeLab - Login</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="MobileOptimized" content="width"/>
+    <meta name="HandheldFriendly" content="true"/>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="js/db.js"></script>
+    <script src="js/recipelab.js"></script>
+    <script src="js/index.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/index.css"/>
+  </head>
+  <body>
+    <!-- Make sure we skip the login page if the user logged in already -->
+    <script type="text/javascript">
+      reroute_if_logged_in();
+    </script>
+    <!-- User is not logged in. Show the login/sign-up options. -->
+    <header>
+      <label>RecipeLab</label>
+    </header>
+    <section>
+      <ul id="input_fields">
+        <li>
+          <label for="username">Username :</label>
+          <input id="username" class="input_field">
+        </li>
+        <li class="only_signup">
+          <label for="email">E-mail :</label>
+          <input id="email" type="email" class="input_field">
+        </li>
+        <li class="only_signup">
+          <label for="con_email">Confirm E-mail :</label>
+          <input id="con_email" type="email" class="input_field">
+        </li>
+        <li>
+          <label for="pwd">Password :</label>
+          <input id="pwd" type="password" class="input_field">
+        </li>
+        <li class="only_signup">
+          <label for="con_pwd">Confirm Password :</label>
+          <input id="con_pwd" type="password" class="input_field">
+        </li>
+        <li class="only_signup" id="terms_item">
+          <input type="checkbox" name="terms" id="terms"/>
+          <label for="terms">
+            I accept the <a href="terms.html">terms of service</a>.
+          </label>
+        </li>
+      </ul>
+      <button id="signup" class="only_login">Sign Up</button>
+      <button id="login_btn" class="only_login">Login</button>
+      <button id="submit" class="only_signup">Submit</button>
+      <button id="cancel" class="only_signup">Cancel</button>
+    </section>
+    <footer>
+      RecipeLab&copy; is a registered trademark<br/>
+      of <a href="mailto:itanar.benady@gmail.com">Itamar Benady</a>
+      and <a href="mailto:dorgross@gmail.com">Dor Gross</a>.
+    </footer>
+    <script type="text/javascript">
+      $(function() {
+        login_page_loaded();
+      });
+    </script>
+  </body>
+</html>

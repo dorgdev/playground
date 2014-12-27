@@ -1,0 +1,4 @@
+char[][] table = new char[][];
+char[] col = new char[] {'a','b','c'};
+table[0] = col;
+System.out.println(table[0][0]);

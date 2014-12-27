@@ -1,0 +1,24 @@
+
+#wd-form dt {
+  float: none;
+  clear: both;
+  text-align: left;
+  padding-bottom: 1px;
+  border: 0;
+  font-weight: bold;
+  width: auto;
+}
+#wd-form dd {
+  margin: 0;
+  border-top: 0;
+  border-bottom: 1px solid #e9e9e9;
+  padding-top: 0;
+}
+#wd-form p {
+  padding-left: .5em;
+  border-top: 0;
+}
+/* error message next to the field */
+#wd-form .error-msg {
+  display: block; 
+}

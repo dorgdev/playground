@@ -1,0 +1,25 @@
+application: webdev-course
+version: 1
+runtime: python
+api_version: 1
+
+default_expiration: "1s"
+
+handlers:
+
+- url: /
+  static_files: index.html
+  upload: index.html
+
+- url: /webdev-course.zip
+  static_files: webdev-course.zip
+  upload: webdev-course.zip
+
+- url: /demos
+  static_dir: demos
+
+- url: /exercises
+  static_dir: exercises
+
+- url: /utilities
+  static_dir: utilities

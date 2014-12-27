@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <title>Web Developers, Inc. - Home</title>
+  
+  </head>
+  <body>
+    <div id="header" role="banner">
+      <h1>Web Developers, Inc.</h1>
+
+      <ol id="navigation" role="navigation">
+        <li><a href="/">Home</a></li>
+        <li><a href="/products">Products</a></li>
+        <li><a href="/services">Services</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/contact">Contact</a>
+          <ul>
+            <li><a href="/contact/advertising">Advertising</a></li>
+            <li><a href="/contact/marketing">Marketing</a></li>
+            <li><a href="/contact/sales">Sales</a></li>
+            <li><a href="/contact/theceo">The CEO</a></li>
+          </ul>
+        </li>
+      </ol>
+
+    </div>
+    <div id="content" role="main">
+      <div id="related-brands">
+        <h2>Related Brands</h2>
+        <ul>
+          <li><a href="http://altostrat.com" title="Altostrat Corporation">Altostrat Corp</a></li>
+          <li><a href="http://example.com" title="SisterCompany Incorporated">SisterCompany Inc.</a></li>
+          <li><a href="http://organic-city.com" title="Organic City Incorporated">Organic City</a></li>
+        </ul>
+      </div>
+      <div id="sign-up">  
+        <h2>Sign Up</h2>
+        <p>Welcome to our sample web page. We'll be dissecting this page piece by piece to show you the best ways to use HTML, CSS and Javascript.</p>
+        <form>
+          <fieldset>
+            <legend>Create a Profile</legend>
+            <dl>
+              <dt><label for="firstname">First Name</label></dt>
+              <dd><input type="text" name="firstname" id="firstname"></dd>
+              <dt><label for="lastname">Last Name</label></dt>
+              <dd><input type="text" name="lastname" id="lastname"></dd>
+              <dt><label for="dob">Date of Birth</label></dt>
+              <dd><input type="text" name="dob" id="dob"></dd>
+              <dt>Gender</dt>
+            	<dd>
+            	  <input type="radio" name="gender" id="gender-male"> <label for="gender-male">male</label>  
+            	  <input type="radio" name="gender" id="gender-female"> <label for="gender-female">female</label>
+            	</dd>
+            </dl>
+            <input type="submit" value="Create profile">
+          </fieldset>
+        </form>
+      </div>
+    </div>
+    <div id="footer" role="contentinfo">
+      Copyright © 2008 Google
+    </div>
+  </body>
+</html>

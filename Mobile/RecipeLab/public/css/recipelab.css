@@ -1,0 +1,295 @@
+root { 
+  display: block;
+}
+/*
+ * General footer and header CSS rules.
+ */
+#recipelab-header {
+  text-align: center;
+  font-family: fantasy ,cursive, serif;
+  font-size: 30px;
+  padding: 5px;
+  height: 50px;
+  color: red;
+}
+#recipelab-footer {
+  text-align: left;
+  padding: 0px;
+  margin: 0px;
+  width: 101%;
+}
+#recipelab-footer div {
+  text-align: left;
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+#recipelab-footer div a.recipelab-footer-button {
+  text-align: left;
+  width: 24.6%;
+  padding: 0px;
+  margin: 0px;
+  border-radius: 0px;
+  padding-bottom: 3px;
+}
+/*
+ * Home CSS rules
+ */
+div#home-content {
+  font-size: 20px;
+  text-align: center;
+}
+div.home-type {
+  margin-bottom: 10px;
+  margin-left: 2%;
+  margin-right: 2%;
+  width: 40%;
+  text-align: center;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  padding: 2%;
+  border: #456993 solid 2px;
+  border-radius: 15px;
+  display: inline-block;
+  background-color: #adccf0;
+  font-size: 20px;
+  text-decoration: none;
+  cursor: pointer;
+}
+img.home-type-img {
+  min-width: 85%;
+  max-width: 95%;
+  border-radius: 15px;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+}
+/*
+ * Settings page CSS rules.
+ */
+a#settings-logout {
+  text-shadow: none;
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#dd1a1a), to(#ff8877));
+  margin-bottom: 0px;
+}
+/*
+ * Terms of Service page CSS rules.
+ */
+div.terms-paragraph:first-child {
+  font-weight: bold;
+}
+div.terms-paragraph {
+  font-family: monospace;
+  font-size: 14px;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  text-align: justify;
+}
+/*
+ * About page CSS rules.
+ */
+img#about-image {
+  width: 100%;
+  border: #6580eb 2px solid;
+  border-radius: 8px;
+}
+p.about-paragraph {
+  text-align: justify;
+}
+#about-content label.about-headline-1 {
+  font-size: 48px;
+}
+#about-content label.about-headline-2 {
+  font-size: 32px;
+}
+#about-content a {
+  float: right;
+}
+/*
+ * General Under-Construction page CSS rules.
+ */
+img#underconstruction-img {
+  width: 100%;
+}
+/*
+ * Type, search and favorites (list pages) CSS rules.
+ */
+#type-content, #fav-content {
+  margin: 0px;
+  padding: 0px;
+  padding-bottom: 0px;
+}
+#search-content {
+  margin: 0px;
+  padding: 4px;
+}
+#type-content-header a {
+  float: right;
+  margin: 0px;
+}
+#type-content-header label {
+  padding-left: 15px;
+}
+#search-form-div {
+  z-index: 3;
+  bottom: 35px;
+  position: fixed;
+  width: 98%;
+  text-align: center;
+}
+#search-input-div {
+  display: inline-block;
+  width: 65%;
+}
+#search-by-div {
+  width: 30%;
+  display: inline-block;
+}
+#type-content-header, #fav-content-header, #search-content-header {
+  font-size: 20px;
+  text-align: center;
+  margin: 10px;
+}
+div.recipe-item-div {
+  margin: 0px;
+  padding: 0px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 0px;
+  border: 1px black solid;
+  border-top: 0px;
+  color: #202e36;
+}
+div.recipe-item-title {
+  text-align: center;
+  height: 35px;
+  padding-top: 5px;
+}
+div.recipe-item-title label {
+  font-size: 18px;
+  text-align: center;
+  cursor: pointer;
+}
+div.recipe-item-title label:hover {
+  color: red;
+}
+div.recipe-item-title img {
+  padding-right: 12px;
+  width: 10%;
+  max-width: 25px;
+  float: right;
+  cursor: pointer;
+}
+#search-content div.recipe-item-div:last-child   {
+  margin-bottom: 50px;
+}
+div.recipe-item-div:first-child   {
+  margin-top: 15px;
+  border-top: 1px black solid;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+div.recipe-item-div:last-child   {
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  margin-bottom: 15px;
+}
+div.recipe-item-div div.recipe-item-div-inner img.recipe-item-img {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  border: #455667 2px solid;
+  display: block;
+}
+div.recipe-item-div div.recipe-item-div-inner a {
+  width: 45%;
+  display: inline-block;
+  margin: 5px;
+  margin-bottom: 10px;
+  background-image: linear-gradient(bottom, rgb(188,245,219) 22%, rgb(151,196,175) 55%);
+  background-image: -o-linear-gradient(bottom, rgb(188,245,219) 12%, rgb(151,196,175) 55%);
+  background-image: -moz-linear-gradient(bottom, rgb(188,245,219) 12%, rgb(151,196,175) 55%);
+  background-image: -webkit-linear-gradient(bottom, rgb(188,245,219) 12%, rgb(151,196,175) 55%);
+  background-image: -ms-linear-gradient(bottom, rgb(188,245,219) 42%, rgb(151,196,175) 55%);
+}
+div.recipe-item-div:nth-child(odd) {
+  background-image: linear-gradient(bottom, rgb(16,117,168) 12%, rgb(59,166,219) 55%);
+  background-image: -o-linear-gradient(bottom, rgb(16,117,168) 12%, rgb(59,166,219) 55%);
+  background-image: -moz-linear-gradient(bottom, rgb(16,117,168) 12%, rgb(59,166,219) 55%);
+  background-image: -webkit-linear-gradient(bottom, rgb(16,117,168) 12%, rgb(59,166,219) 55%);
+  background-image: -ms-linear-gradient(bottom, rgb(16,117,168) 12%, rgb(59,166,219) 55%);
+}
+div.recipe-item-div:nth-child(even) {
+  background-image: linear-gradient(bottom, rgb(16,158,168) 12%, rgb(78,222,230) 55%);
+  background-image: -o-linear-gradient(bottom, rgb(16,158,168) 12%, rgb(78,222,230) 55%);
+  background-image: -moz-linear-gradient(bottom, rgb(16,158,168) 12%, rgb(78,222,230) 55%);
+  background-image: -webkit-linear-gradient(bottom, rgb(16,158,168) 12%, rgb(78,222,230) 55%);
+  background-image: -ms-linear-gradient(bottom, rgb(16,158,168) 12%, rgb(78,222,230) 55%);
+}
+/*
+ * View, Edit and Add recipe CSS rules.
+ */
+#recipe-ingredients-list div.ui-block-a {
+  width: 35%;
+  min-width: 30%;
+  max-width: 45%;
+}
+#recipe-ingredients-list div.ui-block-b {
+  width: 65%;
+  min-width: 52%;
+  max-width: 68%;
+}
+#recipe-ingredients-list div.recipe-ingredients-header {
+  color: #330000;
+  text-decoration: underline;
+}
+#edit-ingredients-list table tr td.col-a, #add-ingredients-list table tr td.col-a {
+  width: 5% !important;
+}
+#edit-ingredients-list table tr td.col-b, #add-ingredients-list table tr td.col-b {
+  width: 10% !important;
+}
+#edit-ingredients-list table tr td.col-c, #add-ingredients-list table tr td.col-c {
+  width: 20% !important;
+}
+#edit-ingredients-list table tr td.col-d, #add-ingredients-list table tr td.col-d {
+  width: 50% !important;
+}
+#recipe-img-div {
+  margin-top: 15px; 
+ text-align: center;
+}
+#recipe-img {
+  width: 98%;
+  border-radius: 15px;
+  border: 2px #a1a1a1 solid;
+}
+#recipe-edit-button, #edit-cancel-button {
+  background-image: linear-gradient(bottom, rgb(143,188,227) 22%, rgb(117,147,173) 53%);
+  background-image: -o-linear-gradient(bottom, rgb(143,188,227) 22%, rgb(117,147,173) 53%);
+  background-image: -moz-linear-gradient(bottom, rgb(143,188,227) 22%, rgb(117,147,173) 53%);
+  background-image: -webkit-linear-gradient(bottom, rgb(143,188,227) 22%, rgb(117,147,173) 53%);
+  background-image: -ms-linear-gradient(bottom, rgb(143,188,227) 22%, rgb(117,147,173) 53%)
+}
+#edit-save-button, #add-add-button {
+  background-image: linear-gradient(bottom, rgb(150,227,143) 22%, rgb(136,171,116) 53%);
+  background-image: -o-linear-gradient(bottom, rgb(150,227,143) 22%, rgb(136,171,116) 53%);
+  background-image: -moz-linear-gradient(bottom, rgb(150,227,143) 22%, rgb(136,171,116) 53%);
+  background-image: -webkit-linear-gradient(bottom, rgb(150,227,143) 22%, rgb(136,171,116) 53%);
+  background-image: -ms-linear-gradient(bottom, rgb(150,227,143) 22%, rgb(136,171,116) 53%);
+}
+#edit-delete-button, #add-cancel-button {
+  background-image: linear-gradient(bottom, rgb(227,143,143) 22%, rgb(173,117,117) 53%);
+  background-image: -o-linear-gradient(bottom, rgb(227,143,143) 22%, rgb(173,117,117) 53%);
+  background-image: -moz-linear-gradient(bottom, rgb(227,143,143) 22%, rgb(173,117,117) 53%);
+  background-image: -webkit-linear-gradient(bottom, rgb(227,143,143) 22%, rgb(173,117,117) 53%);
+  background-image: -ms-linear-gradient(bottom, rgb(227,143,143) 22%, rgb(173,117,117) 53%);
+}
+#edit-recipe-image, #add-recipe-image {
+  background-image: linear-gradient(bottom, rgb(166,160,53) 22%, rgb(224,224,87) 53%);
+  background-image: -o-linear-gradient(bottom, rgb(166,160,53) 22%, rgb(224,224,87) 53%);
+  background-image: -moz-linear-gradient(bottom, rgb(166,160,53) 22%, rgb(224,224,87) 53%);
+  background-image: -webkit-linear-gradient(bottom, rgb(166,160,53) 22%, rgb(224,224,87) 53%);
+  background-image: -ms-linear-gradient(bottom, rgb(166,160,53) 22%, rgb(224,224,87) 53%);
+}

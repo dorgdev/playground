@@ -1,0 +1,57 @@
+body {
+	font-family: Verdana, Helvetica, sans-serif;
+	background-color: #DDDDDD;
+	text-align: center;
+}
+
+table, tr, td {
+	margin-left:auto; 
+    margin-right:auto;
+}
+
+table.maze, th.maze, tr.maze {
+	text-align: center;
+	border-collapse:collapse;
+	padding: 0px;
+}
+
+td.maze {
+	border: 1px solid black;
+	border-collapse:collapse;
+	margin: 0px;
+	padding: 0px;
+}
+
+td.blank {
+	background: #DBDBDB;
+}
+
+td.visited {
+	background: #DBDBDB;
+}
+
+td.left {
+	border-left-style: none;
+}
+
+td.right {
+	border-right-style: none;
+}
+
+td.up {
+	border-top-style: none;
+}
+
+td.down {
+	border-bottom-style: none;
+}
+
+#victory_table {
+	text-align: center;
+}
+
+#steps_counter {
+	background-color: #EDEDED;
+	border: 3px groove #DDADAD;
+	text-align: center;
+}

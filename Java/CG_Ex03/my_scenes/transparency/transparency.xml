@@ -1,0 +1,101 @@
+<scene
+	background-col="0.1 0.4 0.1"
+	background-tex="background.jpg"
+	ambient-light="1 1 1"
+	super-samp-width="4"
+	max-recursion-level="5">
+
+	<omni-light pos="-3 1 4" color="1 1 1"/>
+	<omni-light pos="1 6 -6" color="1 1 1"/>
+	<omni-light pos="6 -4 -1" color="1 1 1"/>
+
+	<camera
+		eye="-1 3.5 1.2"
+		look-at="1 1 -1"
+		screen-width="2"
+		screen-dist="1"
+		up-direction="0 1 0"
+	/>
+
+	<!-- Dice's 1 -->
+	<circle center="0 1 -1" radius="0.25" mtl-diffuse="1 1 1" vec1="0 0 1" vec2="0 1 0"/>
+	<circle center="0 1 -1" radius="0.25" mtl-diffuse="1 1 1" vec1="0 0 1" vec2="0 -1 0"/>
+	<!-- Dice's 2 -->
+	<circle center="0.55 2 -0.55" radius="0.25" mtl-diffuse="1 1 1" vec1="0 0 1" vec2="1 0 0"/>
+	<circle center="1.45 2 -1.45" radius="0.25" mtl-diffuse="1 1 1" vec1="0 0 1" vec2="1 0 0"/>
+	<circle center="0.55 2 -0.55" radius="0.25" mtl-diffuse="1 1 1" vec1="0 0 1" vec2="-1 0 0"/>
+	<circle center="1.45 2 -1.45" radius="0.25" mtl-diffuse="1 1 1" vec1="0 0 1" vec2="-1 0 0"/>
+	<!-- Dice's 3 -->
+	<circle center="1 1 -2" radius="0.25" mtl-diffuse="1 1 1" vec1="1 0 0" vec2="0 -1 0"/>
+	<circle center="0.45 1.55 -2" radius="0.25" mtl-diffuse="1 1 1" vec1="1 0 0" vec2="0 -1 0"/>
+	<circle center="1.55 0.45 -2" radius="0.25" mtl-diffuse="1 1 1" vec1="1 0 0" vec2="0 -1 0"/>
+	<circle center="1 1 -2" radius="0.25" mtl-diffuse="1 1 1"/>
+	<circle center="0.45 1.55 -2" radius="0.25" mtl-diffuse="1 1 1"/>
+	<circle center="1.55 0.45 -2" radius="0.25" mtl-diffuse="1 1 1"/>
+	<!-- Dice's 4 -->
+	<circle center="0.55 0.55 0" radius="0.25" mtl-diffuse="1 1 1"/>
+	<circle center="1.45 0.55 0" radius="0.25" mtl-diffuse="1 1 1"/>
+	<circle center="1.45 1.45 0" radius="0.25" mtl-diffuse="1 1 1"/>
+	<circle center="0.55 1.45 0" radius="0.25" mtl-diffuse="1 1 1"/>
+	<circle center="0.55 0.55 0" radius="0.25" mtl-diffuse="1 1 1" vec1="-1 0 0"/>
+	<circle center="1.45 0.55 0" radius="0.25" mtl-diffuse="1 1 1" vec1="-1 0 0"/>
+	<circle center="1.45 1.45 0" radius="0.25" mtl-diffuse="1 1 1" vec1="-1 0 0"/>
+	<circle center="0.55 1.45 0" radius="0.25" mtl-diffuse="1 1 1" vec1="-1 0 0"/>
+	<!-- Dice's 5 -->
+	<circle center="1 0 -1" radius="0.25" mtl-diffuse="1 1 1" vec1="0 0 -1" vec2="1 0 0"/>
+	<circle center="0.45 0 -0.45" radius="0.25" mtl-diffuse="1 1 1" vec1="0 0 -1" vec2="1 0 0"/>
+	<circle center="0.45 0 -1.55" radius="0.25" mtl-diffuse="1 1 1" vec1="0 0 -1" vec2="1 0 0"/>
+	<circle center="1.45 0 -0.45" radius="0.25" mtl-diffuse="1 1 1" vec1="0 0 -1" vec2="1 0 0"/>
+	<circle center="1.45 0 -1.55" radius="0.25" mtl-diffuse="1 1 1" vec1="0 0 -1" vec2="1 0 0"/>
+	<circle center="1 0 -1" radius="0.25" mtl-diffuse="1 1 1" vec1="0 0 -1" vec2="-1 0 0"/>
+	<circle center="0.45 0 -0.45" radius="0.25" mtl-diffuse="1 1 1" vec1="0 0 -1" vec2="-1 0 0"/>
+	<circle center="0.45 0 -1.55" radius="0.25" mtl-diffuse="1 1 1" vec1="0 0 -1" vec2="-1 0 0"/>
+	<circle center="1.45 0 -0.45" radius="0.25" mtl-diffuse="1 1 1" vec1="0 0 -1" vec2="-1 0 0"/>
+	<circle center="1.45 0 -1.55" radius="0.25" mtl-diffuse="1 1 1" vec1="0 0 -1" vec2="-1 0 0"/>
+	<!-- Dice's 6 -->
+	<circle center="2 1.55 -0.55" radius="0.25" mtl-diffuse="1 1 1" vec1="0 0 1" vec2="0 -1 0"/>
+	<circle center="2 1 -0.55" radius="0.25" mtl-diffuse="1 1 1" vec1="0 0 1" vec2="0 -1 0"/>
+	<circle center="2 0.45 -0.55" radius="0.25" mtl-diffuse="1 1 1" vec1="0 0 1" vec2="0 -1 0"/>
+	<circle center="2 1.55 -1.45" radius="0.25" mtl-diffuse="1 1 1" vec1="0 0 1" vec2="0 -1 0"/>
+	<circle center="2 1 -1.45" radius="0.25" mtl-diffuse="1 1 1" vec1="0 0 1" vec2="0 -1 0"/>
+	<circle center="2 0.45 -1.45" radius="0.25" mtl-diffuse="1 1 1" vec1="0 0 1" vec2="0 -1 0"/>
+	<circle center="2 1.55 -0.55" radius="0.25" mtl-diffuse="1 1 1" vec1="0 0 1" vec2="0 1 0"/>
+	<circle center="2 1 -0.55" radius="0.25" mtl-diffuse="1 1 1" vec1="0 0 1" vec2="0 1 0"/>
+	<circle center="2 0.45 -0.55" radius="0.25" mtl-diffuse="1 1 1" vec1="0 0 1" vec2="0 1 0"/>
+	<circle center="2 1.55 -1.45" radius="0.25" mtl-diffuse="1 1 1" vec1="0 0 1" vec2="0 1 0"/>
+	<circle center="2 1 -1.45" radius="0.25" mtl-diffuse="1 1 1" vec1="0 0 1" vec2="0 1 0"/>
+	<circle center="2 0.45 -1.45" radius="0.25" mtl-diffuse="1 1 1" vec1="0 0 1" vec2="0 1 0"/>
+
+	<!-- The cube (aligned box) -->
+	<box		
+		vertices="0.001 0.001 -0.001    1.999 1.999 -1.999"
+		mtl-diffuse="0.75 0 0"
+		mtl-specular="0 0 0"
+		reflectance="0"
+		transparency="0.5"
+	/>
+	
+	<!-- Another transparent sphere -->
+	<sphere center="0.3 0.6 -4" radius="0.75" mtl-diffuse="0 0.1 1" transparency="0.85"/>
+		
+	<!-- A mirror on the side -->
+	<trimesh
+		tri1="0 3 -6   0 0 -6   3 0 -5"
+		tri2="0 3 -6   3 0 -5   3 3 -5"
+		mtl-diffuse="0 0 0"
+		mtl-specular="1 1 1"
+		mtl-shininess="100"
+		reflectance="1"
+	/>
+
+	<!-- The mirror's frame -->
+	<trimesh
+		tri1="-0.1 3.1 -6.03  -0.1 -0.1 -6.03  3.1 -0.1 -5.03"
+		tri2="-0.1 3.1 -6.03   3.1 -0.1 -5.03  3.1  3.1 -5.03"
+		mtl-diffuse="0 0 0"
+		mtl-specular="0.5 0.5 0.5"
+		mtl-shininess="20"
+		reflectance="0.1"
+	/>
+
+</scene>

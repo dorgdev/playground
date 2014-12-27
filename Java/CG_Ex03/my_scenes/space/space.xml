@@ -1,0 +1,42 @@
+<scene
+	background-col="0 0 0" 
+	background-tex="stars.jpg" 
+	ambient-light="0.05 0.05 0.05"
+	super-samp-width="5"
+	max-recursion-level="3">
+
+	<omni-light pos="4.1 0.3 -3.7" color="1 1 1"/>
+	<omni-light pos="-5 0 -6" color="0.2 0.2 0.2"/>
+	<omni-light pos="0 0 0" color="0.2 0.2 0.2"/>
+
+	<camera
+		eye="0 0 0"
+		direction="0 0 -1"
+		screen-width="2"
+		screen-dist="1"
+		up-direction="0 1 0"
+	/>
+
+	<!-- Earth -->
+	<sphere 
+		center="-2.5 -0.4 -9"
+		radius="2.5"
+		mtl-ambient="1 1 1"
+		mtl-emission="0 0 0"
+		mtl-texture="world-map.jpg"
+		mtl-specular="0 0 0"
+		reflectance="0"
+		texture-center="0.1 -0.10 0.5"
+	/>
+
+	<!-- Moon -->
+	<sphere 
+		center="2 0.2 -5.7"
+		radius="0.7"
+		mtl-ambient="1 1 1"
+		mtl-emission="0.1 0.1 0.1"
+		mtl-texture="moon.jpg"
+		mtl-specular="0 0 0"
+		reflectance="0"
+	/>
+</scene>

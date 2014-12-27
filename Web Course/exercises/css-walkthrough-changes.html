@@ -1,0 +1,202 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+  <head>
+    <title>HTML, CSS, and Javascript from the Ground Up: CSS Interactive</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <style type="text/css">
+    </style>
+  </head>
+  <body>
+    <h1>CSS interactive changes in order, with explanations</h1>
+    <ol>
+      <li>
+        <code>#wd-c div { width: 150px; }</code>
+        <p>
+          Gives the DIVs a nice, even, box shape.
+        </p>
+      </li>
+      <li>
+        <code>#wd-c div { display: inline; }</code>
+        <p>
+          Turn the DIVs into SPANs, basically. The height of #wd-c is equal to the actual height of the text.
+        </p>
+      </li>
+      <li>
+        <code>#wd-c div { display: block; }</code>
+        <p>
+          Change display back to the default value for a div, block.
+        </p>
+      </li>
+      
+      <li>
+        <code>#wd-2 { display: inline; }</code>
+        <p>
+          Why did nothing happen?
+        </p>
+      </li>
+      
+      <li>
+        <code>#wd-c #wd-2 { display: inline; }</code>
+        <p>
+          There we go. Everybody's in the flow, and flowing as designated around each other.
+        </p>
+      </li>
+      
+      <li>
+        <code>#wd-c #wd-2 { display: block; }</code>
+        <p>
+          Back to normal now.
+        </p>
+      </li>
+      
+      <li>
+        <code>#wd-c div { margin: 1em; }</code>
+        <p>
+          Separate each of the inner divs and moves them away from their container by a relative amount on all sides. Font-scale in the browser, and notice that the distance between the divs grows, but the divs themselves do not.
+        </p>
+      </li>
+      
+      <li>
+        <code>#wd-c div { padding: 10px; }</code>
+        <p>
+          Add 10px of padding to each of the inner divs. What is their offset width now? (100 + 10 + 10 + 1 + 1)
+        </p>
+      </li>
+      
+      <li>
+        <code>#wd-c div { border: 2px dotted #000; }</code>
+        <p>
+          Give each of inner divs a 2 pixel dotted border. What is their offset width now?
+        </p>
+      </li>
+      <li>
+        <code>#wd-2 { visibility: hidden; }</code>
+        <p>
+          Makes the second div invisible, but it is still in the flow, so its box is considered in the render calculation.
+        </p>
+      </li>
+      <li>
+        <code>#wd-2 { visibility: visible; }</code>
+        <p>
+          Set #wd-2's visibility back to the default value, visible.
+        </p>
+      </li>
+      <li>
+        <code>#wd-2 { position: absolute; }</code>
+        <p>
+          3 ends up positioned where 2 is as if 2 were not there at all. AKA 2 is "out of the flow". 2 appears to be on top of 3. 
+        </p>
+      </li>
+      <li>
+        <code>#wd-2 { right: 0; }</code>
+        <p>
+          Give #wd-2 a right coordinate of 0. This positions its right edge at 0px from the right edge of the viewport. Why is it not touching the viewport?
+        </p>
+      </li>
+      <li>
+        <code>#wd-c #wd-2 { margin: 0; }</code>
+        <p>
+          Ah, there we go.
+        </p>
+      </li>
+      
+      <li>
+        <code>#wd-2 { top: 20px; }</code>
+        <p>
+          We can also move the top of the box to 20px from the top of the viewport.
+        </p>
+      </li>
+      
+      <li>
+        <code>#wd-2 { bottom: 20px; }</code>
+        <p>
+          Conflicting styles for top and bottom. Your guess is as good as mine.
+        </p>
+      </li>
+      
+      <li>
+        <code>#wd-2 { top: auto; }</code>
+        <p>
+          Resetting top to the magic keyword "auto" lets our bottom rule take effect.
+        </p>
+      </li>
+      
+      <li>
+        <code>#wd-2 { bottom: auto; }</code>
+        <p>
+          Reset bottom back to auto and we're back to where we started.
+        </p>
+      </li>
+      
+      <li>
+        <code>#wd-c #wd-2 { margin: 1em; }</code>
+        <p>
+          Put back our 1em margin.
+        </p>
+      </li>
+      <li>
+        <code>#wd-2 { position: static; }</code>
+        <p>
+          Sets #wd-2 back to the default position, static.
+        </p>
+      </li>
+      <li>
+        <code>#wd-2 { position: relative; }</code>
+        <p>
+          Nothing changed. Flow is preserved.
+        </p>
+      </li>
+      <li>
+        <code>#wd-2 { left: 50px; }</code>
+        <p>
+          After laying out, #wd-2 is then shifted 50px to left relative to where it would be otherwise.
+        </p>
+      </li>
+      <li>
+        <code>#wd-2 { top: 50px; }</code>
+        <p>
+          Relatively positioned boxes may overlap onto other elements.
+        </p>
+      </li>
+      <li>
+        <code>#wd-2 { position: static; }</code>
+        <p>
+          Reset position to the default, static.
+        </p>
+      </li>
+      <li>
+        <code>#wd-c div { display: inline; }</code>
+        <p>
+          So let's make them layout horizontally. But why is #wd-2 still looking "blocky"?
+        </p>
+      </li>
+      <li>
+        <code>#wd-c #wd-2 { display: inline; }</code>
+        <p>
+          Oh yeah, specificity... Notice that #wd-c does not take include the heights in paddings or margins for the inline elements (#wd-1,2,3).
+        </p>
+      </li>
+      <li>
+        <code>#wd-c div { float: left; }</code>
+        <p>
+          A floated element is turned into a block display element.
+          Confused? <a href="http://www.w3.org/TR/REC-CSS2/visuren.html#floats">http://www.w3.org/TR/REC-CSS2/visuren.html#floats</a>
+        </p>
+      </li>
+      <li>
+        <code>#wd-c #wd-2 { clear: left; }</code>
+        <p>
+          "Content flows down the right side of a left-floated box"...
+        </p>
+      </li>
+      
+      <li>
+        <code>#wd-c #wd-3 { clear: left; }</code>
+        <p>
+          "Content flows down the right side of a left-floated box"... Notice: The height of #wd-c is 0 because it has no contents in the flow.
+        </p>
+      </li>
+    </ol>
+  </body>
+</html>
+

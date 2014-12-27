@@ -1,0 +1,6 @@
+user.name=Dor
+user.email=<email>
+core.editor=vim
+credential.helper=osxkeychain
+alias.unstage=reset HEAD --
+alias.last=log -1 HEAD

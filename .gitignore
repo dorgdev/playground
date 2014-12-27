@@ -1,0 +1,3 @@
+*.class
+*/.metadata/*
+Mobile/RecipeLab/node_modules/*

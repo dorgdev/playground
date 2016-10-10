@@ -1,0 +1,92 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:paddingLeft="@dimen/activity_horizontal_margin"
+              android:paddingRight="@dimen/activity_horizontal_margin"
+              android:paddingTop="@dimen/activity_vertical_margin"
+              android:paddingBottom="@dimen/activity_vertical_margin"
+              android:orientation="vertical"
+              android:layout_centerVertical="true"
+              android:layout_centerHorizontal="true"
+              android:gravity="center_vertical|center_horizontal|center"
+              tools:context=".WelcomeScreenFragment">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:background="@color/botton_bg"
+            android:text="English:"
+            android:layout_margin="30px"
+            android:padding="30px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:background="@color/edit_bg"
+            android:id="@+id/english_text"
+            android:layout_margin="30px"
+            android:padding="30px"
+            android:lines="2"
+            android:layout_width="400px"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:background="@color/botton_bg"
+            android:text="Russian:"
+            android:layout_margin="30px"
+            android:padding="30px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/russian_text"
+            android:background="@color/edit_bg"
+            android:layout_margin="30px"
+            android:padding="30px"
+            android:lines="2"
+            android:layout_width="400px"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <NumberPicker
+        android:id="@+id/class_num_picker"
+        android:layout_margin="30px"
+        android:padding="30px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:text="Add"
+            android:onClick="addWord"
+            android:layout_margin="30px"
+            android:padding="30px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:text="Add +"
+            android:onClick="addWordAndStay"
+            android:layout_margin="30px"
+            android:padding="30px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</LinearLayout>

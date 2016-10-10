@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Mi aplicion</string>
+    <string name="action_settings">Settings</string>
+    <string name="edit_message">Entrar una mensaje</string>
+    <string name="button_send">Enviar</string>
+    <string name="title_activity_display_message">Mi mensaje</string>
+</resources>

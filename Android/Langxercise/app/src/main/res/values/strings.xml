@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Langxercise</string>
+    <string name="action_settings">Settings</string>
+    <string name="word_added">Added new word successfully</string>
+    <color name="botton_bg">#ffd6d7d7</color>
+    <color name="edit_bg">#ddf4f4f4</color>
+    <color name="table_even_bg">#ddf4f4f4</color>
+    <color name="table_odd_bg">#ddd3d3d3</color>
+    <color name="table_separator">#ff333333</color>
+    <string name="wrong_answer">Wrong!</string>
+    <color name="bg_wrong_answer">#aa660000</color>
+    <string name="correct_answer">Correct!</string>
+    <color name="bg_correct_answer">#aa00aa00</color>
+    <string-array name="num_questions_options">
+        <item>10</item>
+        <item>25</item>
+        <item>50</item>
+        <item>100</item>
+    </string-array>
+</resources>
